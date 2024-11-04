@@ -1,0 +1,7 @@
+{
+  "homescreen": {
+    "btnSkip": "#wrteam.multivendor.customer:id/tvSkip",
+    "btnNext": "#wrteam.multivendor.customer:id/tvNext",
+    "textData": "#wrteam.multivendor.customer:id/tvMessage"
+  }
+}

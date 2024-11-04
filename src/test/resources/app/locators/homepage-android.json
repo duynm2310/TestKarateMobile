@@ -1,0 +1,26 @@
+{
+  "homepage": {
+    "tittleApp": "#wrteam.multivendor.customer:id/toolbarTitle",
+    "ddl": {
+      "textData": "//android.widget.TextView[@text=\"Default Delivery Location\"]",
+      "textboxSearch": "#wrteam.multivendor.customer:id/searchView",
+      "btnSearch": "#wrteam.multivendor.customer:id/tvSearch",
+      "listItem": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvPinCode\"]",
+      "itemAll": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvPinCode\" and @text=\"All\"]",
+      "item370405": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvPinCode\" and @text=\"370405\"]",
+      "item841301": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvPinCode\" and @text=\"841301\"]",
+      "item800001": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvPinCode\" and @text=\"800001\"]",
+      "item370465": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvPinCode\" and @text=\"370465\"]",
+      "item370001": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvPinCode\" and @text=\"370001\"]"
+    },
+    "navs": {
+      "category": "#wrteam.multivendor.customer:id/navCategory",
+      "profile": "#wrteam.multivendor.customer:id/navProfile"
+    },
+    "content": {
+      "vegetables": {
+        "tittle": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\"Fresh Vagetables\"]"
+      }
+    }
+  }
+}

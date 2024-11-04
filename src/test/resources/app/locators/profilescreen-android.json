@@ -1,0 +1,28 @@
+{
+  "profile": {
+    "itemWelcomeGuest": "#wrteam.multivendor.customer:id/lytProfile",
+    "itemWelcometoeCart": "#wrteam.multivendor.customer:id/tvWelcome",
+    "textMobile": "#wrteam.multivendor.customer:id/edtLoginMobile",
+    "textPassword": "#wrteam.multivendor.customer:id/imgLoginPassword",
+    "btnLogin": "#wrteam.multivendor.customer:id/btnLogin",
+    "anchorForgot": "#wrteam.multivendor.customer:id/tvForgotPass",
+    "btnSignup": "#wrteam.multivendor.customer:id/tvSignUp",
+    "itemHome": "#wrteam.multivendor.customer:id/tvMenuHome",
+    "itemCart": "#wrteam.multivendor.customer:id/tvMenuCart",
+    "itemNotification": "#wrteam.multivendor.customer:id/tvMenuNotification",
+    "itemMenuOrder": "#wrteam.multivendor.customer:id/tvMenuOrders",
+    "itemWalletHistory": "#wrteam.multivendor.customer:id/tvMenuWalletHistory",
+    "itemTransactionHistory": "#wrteam.multivendor.customer:id/tvMenuTransactionHistory",
+    "itemChangePassword": "#wrteam.multivendor.customer:id/tvMenuChangePassword",
+    "itemManageAddress": "#wrteam.multivendor.customer:id/tvMenuManageAddresses",
+    "itemReferEarn": "#wrteam.multivendor.customer:id/tvMenuReferEarn",
+    "itemContactUs": "#wrteam.multivendor.customer:id/tvMenuContactUs",
+    "itemAboutUs": "#wrteam.multivendor.customer:id/tvMenuAboutUs",
+    "itemRateUs": "#wrteam.multivendor.customer:id/tvMenuRateUs",
+    "itemShareApp": "#wrteam.multivendor.customer:id/tvMenuRateUs",
+    "itemFAQ": "#wrteam.multivendor.customer:id/tvMenuFAQ",
+    "itemTerm": "#wrteam.multivendor.customer:id/tvMenuTermsConditions",
+    "itemPrivacy": "#wrteam.multivendor.customer:id/tvMenuPrivacyPolicy",
+    "itemLogout": "#wrteam.multivendor.customer:id/tvMenuLogout"
+  }
+}
