@@ -1,7 +1,8 @@
 Feature: Verify Profile screen
 
   Background: Android preset
-    * driver { webDriverSession: { desiredCapabilities : "#(android.desiredConfig)"} }
+    * configure driver = driverConfig
+    * driver { webDriverSession: "#(deviceCaps)" }
 
   @eCart_TC_07
   Scenario: [Android] Verify Profile screen

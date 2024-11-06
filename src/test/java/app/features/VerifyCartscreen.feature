@@ -1,7 +1,8 @@
 Feature: Verify Cart screen
 
   Background: Android preset
-    * driver { webDriverSession: { desiredCapabilities : "#(android.desiredConfig)"} }
+    * configure driver = driverConfig
+    * driver { webDriverSession: "#(deviceCaps)" }
 
   @eCart_TC_05
   Scenario: [Android] Verify Cart screen

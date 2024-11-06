@@ -1,0 +1,10 @@
+{
+  "actions": [
+    {
+      "type": "pointer",
+      "id": "finger1",
+      "parameters": {"pointerType": "touch"},
+      "actions": []
+    }
+  ]
+}

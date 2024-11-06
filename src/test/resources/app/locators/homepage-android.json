@@ -19,8 +19,16 @@
     },
     "content": {
       "vegetables": {
-        "tittle": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\"Fresh Vagetables\"]"
+        "tittle": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\"Fresh Vagetables\"]",
+        "item1": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/relativeLayout\" and @index='3']//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/layoutStyle2_1\"]",
+        "item2": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/relativeLayout\" and @index='3']//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/layoutStyle2_2\"]",
+        "item3": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/relativeLayout\" and @index='3']//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/layoutStyle2_3\"]",
+        "anchorViewAll": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/relativeLayout\" and @index='3']//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvMore\" and @index='2']"
       }
+    },
+    "freshVegetablePage": {
+      "tittle": "#wrteam.multivendor.customer:id/toolbarTitle",
+      "item10": "//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\" and @index=\"9\"]"
     }
   }
 }

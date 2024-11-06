@@ -1,7 +1,8 @@
 Feature: Verify Category screen
 
   Background: Android preset
-    * driver { webDriverSession: { desiredCapabilities : "#(android.desiredConfig)"} }
+    * configure driver = driverConfig
+    * driver { webDriverSession: "#(deviceCaps)" }
 
   @eCart_TC_02
   Scenario: [Android] Verify Category screen

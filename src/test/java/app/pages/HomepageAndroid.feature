@@ -5,6 +5,7 @@ Feature: Home Screen
     * def homepage = locators.homepage
     * def ddl = locators.homepage.ddl
     * def vegetables = locators.homepage.content.vegetables
+    * def freshVegetablePage = locators.homepage.freshVegetablePage
 #    * def Locator = Java.type("app.utils.Locator")
 
   @ChooseDDL
@@ -37,10 +38,30 @@ Feature: Home Screen
 
   @ScrollToFreshVegetable
   Scenario: Scroll to Fresh Vegetables
-    * scroll("#wrteam.multivendor.customer:id/tvTitleCategory")
+    * waitFor(homepage.tittleApp)
+    * call read("classpath:app/commons/ScrollByLocator.feature@ScrollByLocator") {_locator: "#(vegetables.item3)", _count: 10}
+
+  @VerifyFreshVegetableHome
+  Scenario: Verify 3 elements in Vegetable part in homepage
+    * waitFor(vegetables.tittle)
+    * match exists(vegetables.item1) == true
+    * match exists(vegetables.item2) == true
+    * match exists(vegetables.item3) == true
     * screenshot()
+
+  @GoToFreshVegetablePage
+  Scenario: Go to Fresh Vegetable page
+    * waitFor(vegetables.tittle)
+    * click(vegetables.anchorViewAll)
+
+  @VerifyFreshVegetablePage
+  Scenario: Verify 10 elements in Fresh Vegetable Page
+    * match text(freshVegetablePage.tittle) == "Fresh Vagetables"
+    * call read("classpath:app/commons/ScrollByLocator.feature@ScrollByLocator") {_locator: "#(freshVegetablePage.item10)", _count: 10}
+    * match exists(freshVegetablePage.item10) == true
 
   @GoToProfileScreen
   Scenario: Go to Profile Screen
     * waitFor(homepage.tittleApp)
     * click(homepage.navs.profile)
+
