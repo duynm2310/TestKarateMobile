@@ -1,0 +1,11 @@
+{
+  "coffee": {
+    "itemHOICP": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/productName\" and @text=\"High Octane Instant Coffee Paste with Hazelnut and Coconut Flavors, 150G - Pack of 2 (Hazelnut and Coconut Beaten Coffee Paste)\"]",
+    "tittle": "#wrteam.multivendor.customer:id/toolbarTitle",
+    "productName": "#wrteam.multivendor.customer:id/tvProductName",
+    "productPrice": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMainPrice\"]//android.widget.TextView[@index='0']",
+    "btnAddToCart": "//android.widget.ScrollView[@resource-id=\"wrteam.multivendor.customer:id/scrollView\"]//android.widget.Button[@resource-id=\"wrteam.multivendor.customer:id/btnAddToCart\"]",
+    "btnGoToCart": "#wrteam.multivendor.customer:id/btnCart",
+    "tittleSimilar": "#wrteam.multivendor.customer:id/title"
+  }
+}

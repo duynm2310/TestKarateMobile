@@ -5,13 +5,26 @@ Feature: Home Screen
     * def homepage = locators.homepage
     * def ddl = locators.homepage.ddl
     * def vegetables = locators.homepage.content.vegetables
+    * def coffee = locators.homepage.content.coffee
     * def freshVegetablePage = locators.homepage.freshVegetablePage
-#    * def Locator = Java.type("app.utils.Locator")
 
   @ChooseDDL
   Scenario: Choose Default Delivery Location
     * waitFor(ddl.textData)
+    * waitFor(ddl.itemAll)
     * click(ddl.itemAll)
+
+  @ChooseDDL-370405
+  Scenario: Choose Default Delivery Location
+    * waitFor(ddl.textData)
+    * waitFor(ddl.item370405)
+    * click(ddl.item370405)
+
+  @ChooseDDL-370001
+  Scenario: Choose Default Delivery Location
+    * waitFor(ddl.textData)
+    * waitFor(ddl.item370001)
+    * click(ddl.item370001)
 
   @VerifyDDL
   Scenario: Verify elements Default Delivery Location
@@ -19,8 +32,6 @@ Feature: Home Screen
     * match exists(ddl.textboxSearch) == true
     * match exists(ddl.btnSearch) == true
     * match exists(ddl.btnSearch) == true
-#    * def result =  Locator.getElement(driver, ddl.listItem)
-#    * print result
     * match text(ddl.itemAll) == "All"
     * match text(ddl.item370405) == "370405"
     * match text(ddl.item841301) == "841301"
@@ -41,6 +52,11 @@ Feature: Home Screen
     * waitFor(homepage.tittleApp)
     * call read("classpath:app/commons/ScrollByLocator.feature@ScrollByLocator") {_locator: "#(vegetables.item3)", _count: 10}
 
+  @ScrollToCoffee
+  Scenario: Scroll to Coffee
+    * waitFor(homepage.tittleApp)
+    * call read("classpath:app/commons/ScrollByLocator.feature@ScrollByLocator") {_locator: "#(coffee.tittle)", _count: 10}
+
   @VerifyFreshVegetableHome
   Scenario: Verify 3 elements in Vegetable part in homepage
     * waitFor(vegetables.tittle)
@@ -54,9 +70,14 @@ Feature: Home Screen
     * waitFor(vegetables.tittle)
     * click(vegetables.anchorViewAll)
 
+  @GoToCoffeePage
+  Scenario: Go to Coffee page
+    * waitFor(coffee.tittle)
+    * click(coffee.anchorViewAll)
+
   @VerifyFreshVegetablePage
   Scenario: Verify 10 elements in Fresh Vegetable Page
-    * match text(freshVegetablePage.tittle) == "Fresh Vagetables"
+    * waitForText(freshVegetablePage.tittle, "Fresh Vagetables")
     * call read("classpath:app/commons/ScrollByLocator.feature@ScrollByLocator") {_locator: "#(freshVegetablePage.item10)", _count: 10}
     * match exists(freshVegetablePage.item10) == true
 

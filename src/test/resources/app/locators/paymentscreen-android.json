@@ -1,0 +1,12 @@
+{
+  "payment": {
+    "tittle": "#wrteam.multivendor.customer:id/toolbarTitle",
+    "address": "#wrteam.multivendor.customer:id/tvAddress",
+    "preferredDeliveryDate": "#wrteam.multivendor.customer:id/tvSelectDeliveryDate",
+    "grandTotal": "#wrteam.multivendor.customer:id/tvGrandTotal",
+    "productName": "#wrteam.multivendor.customer:id/tvItemName",
+    "deliveryCharge": "#wrteam.multivendor.customer:id/tvDeliveryCharge",
+    "youSaved": "#wrteam.multivendor.customer:id/tvSaveAmount",
+    "subtotal": "//android.widget.LinearLayout[@resource-id=\"wrteam.multivendor.customer:id/lytCalculations\"]/android.widget.LinearLayout[1]/android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvSubTotal\"]"
+  }
+}

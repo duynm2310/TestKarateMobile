@@ -39,7 +39,8 @@ Feature: Profile Screen
     * match exists(profile.itemAboutUs) == true
     * match exists(profile.itemRateUs) == true
     * match exists(profile.itemShareApp) == true
-    * scroll(profile.itemShareApp)
+    * screenshot()
+    * call read("classpath:app/commons/ScrollByLocator.feature@ScrollByLocator") {_locator: "#(profile.itemFAQ)", _count: 10}
     * match exists(profile.itemFAQ) == true
     * match exists(profile.itemTerm) == true
     * match exists(profile.itemPrivacy) == true

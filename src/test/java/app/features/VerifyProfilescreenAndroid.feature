@@ -18,8 +18,6 @@ Feature: Verify Profile screen
     * call read("classpath:app/pages/ProfilescreenAndroid.feature@VerifyLoginscreen")
     # Login
     * call read("classpath:app/pages/ProfilescreenAndroid.feature@Login")
-#    # Choose Default Delivery Location
-#    * call read("classpath:app/pages/HomepageAndroid.feature@ChooseDDL")
     # Go to Profile screen
     * call read("classpath:app/pages/HomepageAndroid.feature@GoToProfileScreen")
     # Verify elements in Profile screen

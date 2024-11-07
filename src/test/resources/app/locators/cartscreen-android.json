@@ -1,0 +1,17 @@
+{
+  "cart": {
+    "data": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\"]",
+    "deliverTo": "#wrteam.multivendor.customer:id/tvLocation",
+    "productName": "#wrteam.multivendor.customer:id/tvProductName",
+    "productPrice": "//android.widget.LinearLayout[@resource-id=\"wrteam.multivendor.customer:id/lytPrice\"]/android.widget.TextView[1]",
+    "productMeasurment": "//android.widget.LinearLayout[@resource-id=\"wrteam.multivendor.customer:id/lytPrice\"]/android.widget.TextView[3]",
+    "productTotal": "#wrteam.multivendor.customer:id/tvTotalPrice",
+    "productQuantity": "//android.widget.LinearLayout[@resource-id=\"wrteam.multivendor.customer:id/lytQuantity\"]//android.widget.TextView",
+    "btnDelete": "#wrteam.multivendor.customer:id/tvDelete",
+    "btnSave": "#wrteam.multivendor.customer:id/tvAction",
+    "btnPromo": "#wrteam.multivendor.customer:id/tvPromoCode",
+    "btnContinute": "#wrteam.multivendor.customer:id/tvConfirmOrder",
+    "btnConfirm": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/confirmLyt\"]/android.widget.TextView[3]",
+    "tittle": "#wrteam.multivendor.customer:id/toolbarTitle"
+  }
+}

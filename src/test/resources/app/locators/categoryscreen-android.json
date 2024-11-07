@@ -9,7 +9,16 @@
     "itemVegetables": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\"Vegetables\"]"
   },
   "fastfood": {
-    "itemKukureData": "//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\" and @index=\"8\"]",
-    "btnAddCartKukure": "//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\" and @index=\"8\"]/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.Button"
+    "tittle": "#wrteam.multivendor.customer:id/toolbarTitle",
+    "itemKukureData": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/productName\" and @text=\"Kurkure Namkeen - Masala Munch,\"]",
+    "btnAddCart": "//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\" and @index=\"8\"]//android.widget.Button[@resource-id=\"wrteam.multivendor.customer:id/btnAddToCart\"]",
+    "btnAddQuantity": "//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\" and @index=\"8\"]//android.widget.ImageButton[@resource-id=\"wrteam.multivendor.customer:id/btnAddQuantity\"]",
+    "cart": "#wrteam.multivendor.customer:id/toolbar_cart"
+  },
+  "beverages": {
+    "itemSunfeastData": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/productName\" and @text=\"Sunfeast Dark Fantasy Choco Fills, 600g\"]",
+    "btnAddCart": "//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\" and @index=\"6\"]//android.widget.Button[@resource-id=\"wrteam.multivendor.customer:id/btnAddToCart\"]",
+    "btnAddQuantity": "//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\" and @index=\"6\"]//android.widget.ImageButton[@resource-id=\"wrteam.multivendor.customer:id/btnAddQuantity\"]",
+    "cart": "#wrteam.multivendor.customer:id/toolbar_cart"
   }
 }
