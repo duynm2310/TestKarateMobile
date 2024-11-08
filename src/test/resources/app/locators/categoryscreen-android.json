@@ -6,7 +6,8 @@
     "itemHomeSupplies": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\" Home Supplies, Utilities & Stationery\"]",
     "itemBeverages": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\"Beverages\"]",
     "itemBabyNeed": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\" Baby Need's\"]",
-    "itemVegetables": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\"Vegetables\"]"
+    "itemVegetables": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\"Vegetables\"]",
+    "listItem": "//android.widget.GridView[@resource-id='wrteam.multivendor.customer:id/categoryRecycleView']//android.widget.TextView"
   },
   "fastfood": {
     "tittle": "#wrteam.multivendor.customer:id/toolbarTitle",

@@ -20,6 +20,7 @@
     "content": {
       "vegetables": {
         "tittle": "//android.widget.TextView[@resource-id=\"wrteam.multivendor.customer:id/tvTitle\" and @text=\"Fresh Vagetables\"]",
+        "listItem": "//android.widget.RelativeLayout[2]//android.widget.FrameLayout",
         "item1": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/relativeLayout\" and @index='3']//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/layoutStyle2_1\"]",
         "item2": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/relativeLayout\" and @index='3']//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/layoutStyle2_2\"]",
         "item3": "//android.widget.RelativeLayout[@resource-id=\"wrteam.multivendor.customer:id/relativeLayout\" and @index='3']//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/layoutStyle2_3\"]",
@@ -32,7 +33,7 @@
     },
     "freshVegetablePage": {
       "tittle": "#wrteam.multivendor.customer:id/toolbarTitle",
-      "item10": "//android.widget.FrameLayout[@resource-id=\"wrteam.multivendor.customer:id/lytMain\" and @index=\"9\"]"
+      "listItem": "//androidx.recyclerview.widget.RecyclerView[@resource-id=\"wrteam.multivendor.customer:id/recyclerView\"]/android.widget.FrameLayout",
     }
   }
 }

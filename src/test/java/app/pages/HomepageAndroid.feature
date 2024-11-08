@@ -31,16 +31,9 @@ Feature: Home Screen
     * waitFor(ddl.textData)
     * match exists(ddl.textboxSearch) == true
     * match exists(ddl.btnSearch) == true
-    * match exists(ddl.btnSearch) == true
-    * match text(ddl.itemAll) == "All"
-    * match text(ddl.item370405) == "370405"
-    * match text(ddl.item841301) == "841301"
-    * match text(ddl.item800001) == "800001"
-    * match text(ddl.item370465) == "370465"
-    * match text(ddl.item370001) == "370001"
+    * def textElements = call read("classpath:app/commons/GetElements.feature@GetTextElements") {xpath: "#(ddl.listItem)"}
+    * match textElements.response == ["All", "370405", "841301", "800001", "370465", "370001"]
     * screenshot()
-#    * def list = locateAll(ddl.listItem)
-#    * match list == ["All", "370405", "841301", "800001", "370465", "370001"]
 
   @GoToCategoryScreen
   Scenario: Go to Category Screen
@@ -60,9 +53,8 @@ Feature: Home Screen
   @VerifyFreshVegetableHome
   Scenario: Verify 3 elements in Vegetable part in homepage
     * waitFor(vegetables.tittle)
-    * match exists(vegetables.item1) == true
-    * match exists(vegetables.item2) == true
-    * match exists(vegetables.item3) == true
+    * def elements = call read("classpath:app/commons/GetElements.feature@GetElementsByXpath") {_xpath: "#(vegetables.listItem)"}
+    * match karate.sizeOf(elements.response) == 3
     * screenshot()
 
   @GoToFreshVegetablePage
@@ -78,8 +70,9 @@ Feature: Home Screen
   @VerifyFreshVegetablePage
   Scenario: Verify 10 elements in Fresh Vegetable Page
     * waitForText(freshVegetablePage.tittle, "Fresh Vagetables")
-    * call read("classpath:app/commons/ScrollByLocator.feature@ScrollByLocator") {_locator: "#(freshVegetablePage.item10)", _count: 10}
-    * match exists(freshVegetablePage.item10) == true
+    * def response = call read("classpath:app/commons/GetElements.feature@GetElementsScrollByXpath") {xpath: "#(freshVegetablePage.listItem)"}
+    * match karate.sizeOf(response.response) == 10
+    * screenshot()
 
   @GoToProfileScreen
   Scenario: Go to Profile Screen

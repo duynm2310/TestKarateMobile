@@ -9,11 +9,8 @@ Feature: Category Screen
   @VerifyCategoryscreen
   Scenario: Verify element Categoryscreen
     * waitFor(category.itemCoffeeProduct)
-    * match exists(category.itemCoffeeProduct) == true
-    * match exists(category.itemFastFood) == true
-    * match exists(category.itemHomeSupplies) == true
-    * match exists(category.itemBeverages) == true
-    * match exists(category.itemBabyNeed) == true
+    * def textElements = call read("classpath:app/commons/GetElements.feature@GetTextElements") {xpath: "#(category.listItem)"}
+    * match textElements.response == ["Coffee Product", "Fast Food", "Home Supplies, Utilities & Stationery", "Beverages", "Baby Need's", "Vegetables"]
     * screenshot()
 
   @GoToBeverages
